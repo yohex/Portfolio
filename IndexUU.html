@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Index.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./flickity-docs/flickity.css" media="screen">
+    <script src="./flickity-docs/flickity.pkgd.js"></script>
+    <title>Jin's Portfolio</title>
+</head>
+<body>
+
+    <div class="Name">
+        <img  class="portpic" border="15px" src="./12622059_10156509996600511_2617467963329582485_o.jpg"/>
+        <h1 id="myname">Andrew Cen</h1>
+    </div>
+
+    <div class="About">
+        <h2>About</h2>
+        <p>Hi, I'm Andrew Cen. Currently I am a graduate student at the University of Waterloo working towards my Masters of Systems Design Engineering. My focus of research is in HCI, Gamification, and UX.
+        </p>
+        <p>
+            I perform my work as a graduate lab researcher at HCI Games Group under the supervision of Dr. Lennart Nacke. 
+        </p>
+    </div>
+
+    <div class="Projects">
+        <h2>Projects</h2>
+        <!--This is for your expanding grid, remember to change colors to pictures-->
+        <div class="row, container">
+            <div class="column, left-div" onclick="openTab('b1');">
+            <img class="pIcons" src="./Project 1 - Shopify/Project Icon - Eco Life.png"/>
+            </div>
+
+            <div class="column, right-div" onclick="openTab('b2');">
+            <img class="pIcons" src="./Project 2 - TD Labs/Project Icon - TD Labs.png"/>
+            </div>
+
+           <!--<div class="column" onclick="openTab('b3');" style="background:red;">Box 3</div>-->
+        </div>
+
+        <!--This is the open portion of your grid-->
+
+        <div id="b1" class="containerTab" style ="display:none;">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+         <h2>Shopify Design Challenge - Eco Life</h2>
+                <div class="main-carousel" data-flickity='{ "cellAlign": "center", "wrapAround": true, "imagesLoaded": true}'>
+                    <div class="carousel-cell">
+                        <img class="cImage" src="./Project 1 - Shopify/Opening Screen.png"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="cImage" src="./Project 1 - Shopify/Home Screen.png"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="cImage" src="./Project 1 - Shopify/QR Scanner.png"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="cImage" src="./Project 1 - Shopify/Animal Saved.png"/>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="cImage" src="./Project 1 - Shopify/Rewards.png"/>
+                    </div>
+                </div>
+            <div class="writeup">
+                <p class="projPara">
+                    <b>Name of project</b>: Eco Life<br>
+                    <b>Programs used</b>: Adobe Photoshop/Illustrator<br>
+                    <b>Term</b>: Summer 2018 <br>
+                    <b>Project Time</b>: 4 hours <br>
+                    <b>Project Size</b>: Solo project<br>
+                    <b>Problem/Challenge statement</b>: Ideate and Design a new digital service solution that will help people understand their choices and it's daily impact on their environment. The aim of the service is to help someone log their information every day to help them gradually make more informed and sensible choices for the environment. The digital service can be on any scale <br>
+                    <b>Deliverables</b>: 
+                </p>
+
+                <ul class="projlist">
+                    <li>300-500 words concept summary</li>
+                    <li>3-5 sample screens of environmental footprint app (Both Android or iOS is fine)</li>
+                </ul>
+
+                <p class="projPara">
+                    <b>Problem solution</b>:<br>
+                    <b>What did I design</b>: The Eco Life application is a digital service application that aims to: gamify the process of recyling plastics, promote purchasing of biodegradable containers, and incentivize individuals to continually recycle. <br>
+                    <b>Who is the target audience</b>: Young professionals and post secondary students were the target market for this digital service. Proto-personas were generated to design this application.<br>
+                    <b>How does it work</b>: The application was designed to be simple and straight forward to use for the users. The user will need to make an account to be able to use this service. They will also have the option to connect their social media services for a quicker sign up process. Within the home screen the user can choose to edit their profile, view/redeem rewards, and collect points via the QR code scanner. <br>
+                    Collecting the points for the user is very simple. The user will be able to earn points in one of two fashions. When the users purchase a biodegradable bottle they will be able to scan the QR code under the bottle cap to obtain points for purchasing an eco friendly bottle. The other method of point collection is through the recycling process. The user will be able to scan a QR code at recycling facilities. The points earned here will correspond with the number of bottles recycled.<br>
+                    Users will be rewarded in one of two ways. When they complete a recycling task they will be informed of how their actions have impacted the environment. The users will also be able to redeem points for various prizes, such as tickets to the zoo or discounts to participating stores.<br>
+                    <b>Design decision considerations</b>: The design of the quick onboarding and sign up process was to ensure wide adoption across the target market. One of the pain points of using digital services is the onboarding process and how long it takes to setup and learn. I wanted to make this as simple and smooth as possible so I also included the consideration of being able to quick sign-up with the user's social media account. This is consideration of being simple to use also carried over into how the collection and redemption of points was implemented. The user simply needs to point and shoot the QR code. This simple gamification of collecting QR codes for points and the inclusion of extrinsic rewards for their efforts aims to boost motivation and proactiveness in recycling efforts.<br>
+                    <b>What infrastructure or collaborations need to be considered/in place?</b><br>
+                    This application requires a lot of partnerships between major food and beverage corporations. The goal to leverage our digital service as a viable solution would be to offer rewards that promote customer loyalty. For example company A decides to implement our QR codes in their bottles, our digital application rewards can include 10% off company A beverages. This will also consider local grocery markets in our efforts. Abroad in Europe some local grocery markets will recycle bottles and return a deposit fee. In cooperation with local grocery markets to implement these services, we can offer them a return on customer loyalty/retention. The other factor that will help push our agenda is corporate image. Our digital service will help boost the corporate image for any company through the promotion of a greener economy and agenda.<br>
+
+                </p>
+            </div>
+        </div>
+
+        <div id="b2" class="containerTab" style ="display:none;">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                <video class="projvideo" width="640" height="480" controls>
+                    <source src="./Adobe XD CC 2018-11-17 6_45_52 PM.mp4" type="video/mp4">
+                </video>
+                <h2>Uxperience Camp 2.0 2018 - TD Assistant</h2>
+                <div class="writeup">
+                        <p class="projPara">
+                            <b>Name of project</b>: TD Assistant<br>
+                            <b>Programs used</b>: Adobe XD, Adobe Photoshop<br>
+                            <b>Term</b>: Fall 2018 <br>
+                            <b>Project Time</b>: 9 hours <br>
+                            <b>Project Size</b>: 5 Person Team<br>
+                            <b>Problem/Challenge statement</b>: Design a service/infrastructure/solution that will help retain and promote use of other TD services for small business owners. <br>
+                            <b>Deliverables</b>: 
+                        </p>
+        
+                        <ul class="projlist">
+                            <li>Mock up/explanation of service/infrastructure/solution</li>
+                            <li>5 minute presentation</li>
+                        </ul>
+        
+                        <p class="projPara">
+                            <b>Problem solution</b>:<br>
+                            <b>What did I design</b>: As a team we worked together to brainstorm multiple ideas to help retain and promote other products at TD for small business members. We decided the best method was to incorporate a personal assistant of some sort to help small business owners with their inquiries and various other task. I designed the application mock up withing the last hour of the competition on Adobe XD to demonstrate our concept idea. <br>
+                            <b>Who is the target audience</b>: Our target audience was small business owners within the Kitchener-Waterloo region. We were given personas to work with, but our team decided it was best to conduct our own market research and surveyed local business in Stratford.<br>
+                            <b>How does it work</b>: Our service was developed with the user in mind. The goal was to figure out how to best assist small business owners. A lot of our market research demonstrated that small business owners did not like the onboarding process, nor the convoluted cross product sales pitches they would receive walking into a banking branch. We used this information to demonstrate a customer based need for a more personal connection between banks and small business owners. <br>
+                            We achieved this through designing a cross platform personal assistant infrastructure that will be implemented for small business owners. This infrastructure works by creating a new department specifically aimed to help find, cultivate, and grow small businesses. Small business owners will be able to use their mobile devices, laptop, desktop, or other media devices and connect to a personal assistant through the existing mobile application. The small business owner will need to complete a quick portfolio. These portfolios will allow and personal assistant manager to be able to follow up on the specific needs of the small business owner, whether it would be investing, business expansion, or loans, etc. The portfolios will also provide personal assistant managers the ability to form a more intimate connection between the business and the bank. Small business owners will benefit from this service by being able to get the answer when they want it, wherever they need it.<br>
+                            <b>Design decision considerations</b>: Our team spent the first few hours gather data from small business owners within Stratford, Ontario. A lot of the responses we received were that they chose the bank of their choice because it was in the area, or it was simple to get to, or that they offered some promotion. These same business owners also offered insight into why banking and other products can become frustrating. They expressed the need for a more consideration and personal connection as their money is on the line. Extrapolating from when a bank does not form a personal connection to the user, the users feel like the bank does not care. This is a pain point that could potentially generate a turnover of customers as they do not feel any loyalty to the brand. Some of the considerations I had while designing this mock up for the mobile platform for the presentation was to avoid excess infrastructure and application. I wanted to bake this right into the existing TD application so that small business owners already banking with TD only need to login the same way they do for everything. Another consideration was how the portfolios were going to be incorporated. The goal was to make the process from start to finish as simple as possible because new small business owners expressed their concerns about completing bank business plans to apply for loans and how tedious the process was. To avoid that I designed a simple 3 step portfolio form that included selecting keywords that pertain to the user and their needs, a small section on who they are, and how can we assist them into the their future.<br>
+                            <b>How does the bank generate revenue, or benefit?</b><br>
+                            This new infrastructure will allow banks to create a personal connection to small business owners. This personal connection can be leveraged to cross sell products to help the bank generate customer loyalty, retention, and cross product sales. If an individual feels more close to a product other banking incentives will not sway them to switch to another banking service. 
+                            <br>
+                            <b>Future Considerations</b>: The time constraint of the presentation and the competition did not allow our team enough time to flesh out all the details. In the future I would like to consider the infrastructure being used and whether the personal assistant managers will be organizing only a portfolio of small businesses,or whether it would be more call center like and everytime you connected you would receive a random personal assistant manager who would read over your file/notes to assist you. Another major consideration for the future would be to user test the portfolio creation portion of my mobile mock up. I want to receive feedback on the ease of use for both sides. Seeing the user's interaction with the portfolio creation will provide insight on whether it is actually simple to use, and recieving feedback from the bank will see if I have pulled the correct information that will allow them to provide the assistance they need. I also did not have time to mock up the web, and other device versions of this application, that would be amusing to explore.
+        
+                        </p>
+                    </div>
+                </div>
+
+                
+        <!--<div id="b3" class="containerTab" style ="display:none;background:red">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                <h2>Box 3</h2>
+                <p>Lorem Ipsum</p>
+                </div>      -->   
+        
+        <script src="Expandible Grid.js"></script>
+
+    </div>
+    
+
+    <div class="Contact">
+        <h1>Contact Me</h2>
+        <p>Email: Jacen@edu.UWaterloo.ca</p>
+        <p>Number: (226) 336-5773</p>
+    </div>
+
+
+    <script src="Collapsible Menu.js" async></script>
+
+</body>
+</html>
